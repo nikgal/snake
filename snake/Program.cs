@@ -13,15 +13,12 @@ namespace snake
            
             p.Draw();
 
-            List<int> numList = new List<int>();
-            numList.Add(0);
-            numList.Add(1);
-            numList.Add(2);
+            HorizontalLine line = new HorizontalLine(5, 10, 8, '+');
+                
+            line.Draw();
 
-            foreach (int i in numList)
-            {
-                Console.WriteLine(i);
-            }
+            VerticalLine vLine = new VerticalLine(5, 10, 8, '*');
+            vLine.Draw();
 
             Console.ReadLine();
         }
